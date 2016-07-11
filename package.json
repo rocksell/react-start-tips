@@ -1,0 +1,22 @@
+{
+  "name": "react-start-tips",
+  "version": "1.0.0",
+  "description": "Simple component is designed to help the user to understand your application workflow on the first entry",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Anastasiya Grishina",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^15.1.0",
+    "react-click-outside": "^2.1.0",
+    "react-css-modules": "^3.7.6",
+    "react-motion": "^0.4.3",
+    "react-motion-ui-pack": "^0.7.3",
+    "react-redux": "^4.4.0",
+    "redux": "^3.3.1",
+    "redux-actions": "^0.9.1",
+    "lodash": "^4.6.1"
+  }
+}
