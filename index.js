@@ -1,3 +1,6 @@
 // export action from './tips';
-export tipsreducer from './reducer';
-export TipsContainer from './container';
+import tipsreducer from './reducer';
+import TipsContainer from './container';
+
+
+export { tipsreducer, TipsContainer }
