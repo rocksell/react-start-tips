@@ -7,7 +7,6 @@ const mapStateToProps = (state) => {
   return {
     open: isTipsOpen(state),
     currentTipId: getCurrentTipId(state),
-    tips: getTips(state),
   };
 };
 

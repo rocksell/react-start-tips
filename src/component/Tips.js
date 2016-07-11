@@ -1,7 +1,6 @@
 import CSSModules from 'react-css-modules';
 import clickOutsideWrapper from 'react-click-outside';
 import styles from './Tips.scss';
-import images from '../images';
 
 export default
 @clickOutsideWrapper
@@ -11,6 +10,7 @@ class Tips extends React.Component {
   static propTypes = {
     currentTipId: React.PropTypes.number.isRequired,
     tips: React.PropTypes.number.isRequired,
+    images: React.PropTypes.array.isRequired,
     open: React.PropTypes.bool.isRequired,
     onCloseTips: React.PropTypes.func.isRequired,
     setCurrentTip: React.PropTypes.func.isRequired,
@@ -44,7 +44,7 @@ class Tips extends React.Component {
         <div styleName="close-btn" onClick={this.props.onCloseTips}>SKIP</div>
         <div styleName="header">{tip.header}</div>
         <div styleName="title">{tip.title}</div>
-        <img styleName="image"src={images[this.props.currentTipId + 1]}/>
+        <img styleName="image"src={this.props.images[this.props.currentTipId + 1]}/>
         <div styleName="dots-wrap">
           {
             this.props.tips.map((t,i) => this.renderDot(i))

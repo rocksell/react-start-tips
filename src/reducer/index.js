@@ -1,4 +1,3 @@
-import tips from './config';
 import { combineReducers } from 'redux';
 import open from './open';
 import currentTip from './currentTip';
@@ -12,4 +11,3 @@ export default Tips;
 
 export const isTipsOpen = state => state.tips.open;
 export const getCurrentTipId = state => state.tips.currentTip;
-export const getTips = () => tips;

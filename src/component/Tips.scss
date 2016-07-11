@@ -1,6 +1,6 @@
 .body {
   width: 600px;
-  height: 600px;
+  height: 540px;
   padding: 0;
   position: absolute;
   top: 50%;
@@ -9,6 +9,7 @@
   background-color: white;
   z-index: 100;
 }
+
 .close-btn {
   top: 12px;
   right: 14px;
@@ -49,7 +50,7 @@
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.6);
-  z-index: 4;
+  z-index: 40;
 }
 
 .dots-wrap {
