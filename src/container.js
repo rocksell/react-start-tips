@@ -3,10 +3,14 @@ import Tips from './component';
 import { isTipsOpen, getTips, getCurrentTipId, tipsCount } from './reducer';
 import { closeTips, setCurrentTip } from './action.js';
 
-const mapStateToProps = (state) => {
+const mapStateToProps = (state, ownProps) => {
   return {
     open: isTipsOpen(state),
     currentTipId: getCurrentTipId(state),
+
+    closeLabel: ownProps.closeLabel,
+    finishLabel: ownProps.finishLabel,
+    nextLabel: ownProps.nextLabel,
   };
 };
 
