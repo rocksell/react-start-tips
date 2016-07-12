@@ -1,11 +1,14 @@
-import Duce from './duce';
+const defaultState = true;
 
-class Open extends Duce {
+const Open = (state = defaultState, action) => {
+  switch (action.type) {
+    case 'OPEN_TIPS':
+      return true;
+    case 'CLOSE_TIPS':
+      return false;
+    default:
+      return state;
+  }
+};
 
-  defaultState = true;
-
-  openTips = () => ( this.replace(true) )
-  closeTips = () => ( this.replace(false) )
-}
-
-export default Open.reducer();
+export default Open;

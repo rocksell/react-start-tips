@@ -1,10 +1,12 @@
-import Duce from './duce';
+const defaultState = 0
 
-class CurretTip extends Duce {
+const CurretTip = (state = defaultState, action) => {
+  switch (action.type) {
+    case 'SET_CURRENT_TIP':
+      return action.payload;
+    default:
+      return state;
+  }
+};
 
-  defaultState = 0;
-
-  setCurrentTip = (id) => ( this.replace(id) )
-}
-
-export default CurretTip.reducer();
+export default CurretTip;

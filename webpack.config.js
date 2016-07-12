@@ -28,16 +28,10 @@ config = {
         }, {
             test: /\.css$/,
             loader: 'style-loader!css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]'
-        }, {
-            test: /\.(png|eot|woff2|ttf|svg|woff)$/,
-            loader: 'url-loader'
-        }, {
+        },  {
             test: /\.scss$/,
             loader: 'style-loader!css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!sass-loader'
-        }, {
-            test: /\.json$/,
-            loader: 'json-loader'
-        }, {
+        },  {
             test: require.resolve('react'),
             loader: 'expose?React'
         }, {

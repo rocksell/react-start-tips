@@ -1,6 +1,6 @@
 {
   "name": "react-start-tips",
-  "version": "1.0.20",
+  "version": "1.0.21",
   "description": "Simple component is designed to help the user to understand your application workflow on the first entry",
   "main": "lib/index",
   "scripts": {
@@ -9,7 +9,7 @@
     "build:umd": "webpack dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
- "files": [
+  "files": [
     "dist",
     "lib",
     "src"
@@ -20,12 +20,12 @@
     "react": "^15.1.0",
     "react-click-outside": "^2.1.0",
     "react-css-modules": "^3.7.6",
+    "react-dom": "^15.2.1",
     "react-motion": "^0.4.3",
     "react-motion-ui-pack": "^0.7.3",
     "react-redux": "^4.4.0",
     "redux": "^3.3.1",
-    "redux-actions": "^0.9.1",
-    "lodash": "^4.6.1"
+    "redux-actions": "^0.9.1"
   },
   "devDependencies": {
     "babel": "^6.5.2",
@@ -40,11 +40,9 @@
     "babel-preset-react": "^6.5.0",
     "babel-preset-stage-0": "^6.5.0",
     "css-loader": "^0.23.1",
-    "es3ify": "^0.2.2",
     "expose-loader": "^0.7.1",
     "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.8.4",
-    "glob": "^7.0.5",
     "node-sass": "^3.8.0",
     "sass-loader": "^3.1.1",
     "style-loader": "^0.13.0",
