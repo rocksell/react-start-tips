@@ -11,8 +11,12 @@ class TipsWrap extends React.Component {
   constructor(props) {
     super(props);
     if (typeof(this.props.firstSession) === "undefined") {
-      this.isFirstSession = !localStorage.getItem(this.props.name + 'hasSession');
-      localStorage.setItem(this.props.name + 'hasSession', 'true');
+      try {
+        this.isFirstSession = !localStorage.getItem(this.props.name + 'hasSession');
+        localStorage.setItem(this.props.name + 'hasSession', 'true');
+      } catch (e) {
+        this.isFirstSession = false;
+      }
     } else {
       this.isFirstSession = this.props.firstSession;
     }
