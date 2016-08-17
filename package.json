@@ -1,11 +1,11 @@
 {
   "name": "react-start-tips",
-  "version": "1.0.21",
+  "version": "1.0.22",
   "description": "Simple component is designed to help the user to understand your application workflow on the first entry",
   "main": "lib/index",
   "scripts": {
-    "build": "npm run build:commonjs & npm run build:umd ",
-    "build:commonjs": "mkdir -p lib && babel ./src -d lib",
+    "prepublish": "npm run build:commonjs & npm run build:umd ",
+    "build:commonjs": "cp -R src/. lib/ && babel ./src -d lib",
     "build:umd": "webpack dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
